@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/ekranbir"
+    tools:context="com.example.nimet.bestday.ActivityKayitSayfasi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:text="Üye Ol"
+            android:textColor="#d2313131"
+            android:textSize="21sp" />
+
+        <EditText
+            android:id="@+id/IsımEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Ad Soyad"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#d2313131"
+            android:textColorHint="#9cffffff" />
+
+        <EditText
+            android:id="@+id/KullanıcıAdıEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Kullanıcı Adı"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="#d2313131"
+            android:textColorHint="#9cffffff" />
+
+        <EditText
+            android:id="@+id/EmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="#d2313131"
+            android:textColorHint="#9cffffff" />
+
+        <EditText
+            android:id="@+id/PasswordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#d2313131"
+            android:textColorHint="#9cffffff" />
+
+        <EditText
+            android:id="@+id/ConfirmPasswordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:hint="Tekrar Şifre"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#d2313131"
+            android:textColorHint="#9cffffff" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/UILA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sözleşme Şartlarını Kabul Ediyorum"
+            android:textColor="#d2313131"
+            app:buttonTint="#fff" />
+
+        <Button
+            android:id="@+id/KayıtOl"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/flat_buton"
+            android:onClick="Onay"
+            android:text="Üye Ol"
+            android:textColor="#d2ff4690" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
