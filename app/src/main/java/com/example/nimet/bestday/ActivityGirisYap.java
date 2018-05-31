@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -15,8 +16,12 @@ public class ActivityGirisYap extends AppCompatActivity {
     EditText GirisPassword = (EditText) findViewById(R.id.PasswordGiris);
     Button GirisYap = (Button) findViewById(R.id.giris);
 
+
+
+
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference loginRef = database.getReference("users/");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

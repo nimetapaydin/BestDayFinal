@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityKaydol"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -27,7 +27,13 @@
             android:authorities="com.example.nimet.bestday.bestdayprovider"
             android:exported="false" />
 
-        <activity android:name=".ActivityGirisYap"></activity>
+        <activity android:name=".ActivityGirisYap"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity">
+
+        </activity>
+
+
     </application>
 
 </manifest>

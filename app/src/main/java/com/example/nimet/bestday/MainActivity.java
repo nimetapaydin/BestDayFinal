@@ -25,8 +25,6 @@ import android.widget.Toast;
 import com.example.nimet.bestday.data.BestdayContract.KategoriEntry;
 import com.example.nimet.bestday.data.BestdayContract.NotlarEntry;
 import com.example.nimet.bestday.data.BestdayQueryHandler;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
@@ -108,8 +106,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, NotActivity.class);
-                startActivity(intent);
+                GoNotActivity();
             }
         });
 
@@ -124,11 +121,15 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     private void ConfigureNextButton(){
-                Intent intent13 = new Intent(MainActivity.this , ActivityGirisYap.class);
+                Intent intent13 = new Intent(MainActivity.this , ActivityKaydol.class);
                 startActivity(intent13);
 
     }
 
+    private void GoNotActivity(){
+        Intent GoNot = new Intent(MainActivity.this, NotActivity.class);
+        startActivity(GoNot);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

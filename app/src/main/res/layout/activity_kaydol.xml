@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@drawable/ekranbir"
-    tools:context="com.example.nimet.bestday.ActivityKayitSayfasi">
+    tools:context="com.example.nimet.bestday.ActivityKaydol">
 
     <LinearLayout
         android:layout_width="match_parent"
