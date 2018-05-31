@@ -26,7 +26,7 @@
             android:textSize="21sp" />
 
         <EditText
-            android:id="@+id/IsımEdit"
+            android:id="@+id/nameEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -38,7 +38,7 @@
             android:textColorHint="#9cffffff" />
 
         <EditText
-            android:id="@+id/KullanıcıAdıEdit"
+            android:id="@+id/usernameEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -50,7 +50,7 @@
             android:textColorHint="#9cffffff" />
 
         <EditText
-            android:id="@+id/EmailEdit"
+            android:id="@+id/emailEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -62,7 +62,7 @@
             android:textColorHint="#9cffffff" />
 
         <EditText
-            android:id="@+id/PasswordEdit"
+            android:id="@+id/passwordEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -74,7 +74,7 @@
             android:textColorHint="#9cffffff" />
 
         <EditText
-            android:id="@+id/ConfirmPasswordEdit"
+            android:id="@+id/confirmPasswordEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/edittext_bg"

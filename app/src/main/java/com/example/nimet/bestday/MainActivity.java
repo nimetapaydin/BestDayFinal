@@ -8,6 +8,7 @@ import android.content.Loader;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,8 @@ import android.widget.Toast;
 import com.example.nimet.bestday.data.BestdayContract.KategoriEntry;
 import com.example.nimet.bestday.data.BestdayContract.NotlarEntry;
 import com.example.nimet.bestday.data.BestdayQueryHandler;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
 public class MainActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor> {
@@ -46,15 +49,18 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+       // setSupportActionBar(toolbar);
                          //Buton tanımlandı
         //loader initialize edilir ve oncreateloader tetiklenir
 
         getLoaderManager().initLoader(150, null, this);
 
 
-
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference();
 
 
         spinner = (Spinner) findViewById(R.id.spinner);
@@ -121,7 +127,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
     }
 
     private void ConfigureNextButton(){
-                Intent intent13 = new Intent(MainActivity.this , ActivityKaydol.class);
+                Intent intent13 = new Intent(MainActivity.this , ActivityGirisYap.class);
                 startActivity(intent13);
 
     }
